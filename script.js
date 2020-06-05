@@ -22,6 +22,11 @@ function showTime() {
   document.getElementById('digitalClock').innerText = time;
   document.getElementById('digitalClock').textContent = time;
 
+  // Add sound effect
+  let clickSound = new Audio();
+  clickSound.src = 'clockTicking.mp3';
+  clickSound.play();
+
   setTimeout(showTime, 1000);
 }
 
